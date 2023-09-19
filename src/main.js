@@ -14,24 +14,14 @@ let products = [];
 let productId = 0;
 let royaltyBalance = 0;
 
-const options = {
-  onHide: () => {
-      console.log('modal is hidden');
-  },
-  onShow: () => {
-      console.log('modal is shown');
-  },
-  onToggle: () => {
-      console.log('modal has been toggled');
-  }
-};
+
 
 
 const authModal = document.getElementById("authentication-modal");
-const modal = new Modal(authModal, options);
+const modal = new Modal(authModal );
 
 const editModal = document.getElementById("edit-modal");
-const modalEdit = new Modal(editModal, options);
+const modalEdit = new Modal(editModal );
 
 const connectCeloWallet = async function () {
   if (window.celo) {
